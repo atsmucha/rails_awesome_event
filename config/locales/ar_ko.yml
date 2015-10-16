@@ -1,0 +1,15 @@
+ko:
+  activerecord:
+    models:
+      event: 이벤트
+      ticket: 티켓
+    attributes:
+      event:
+        name: 이름
+        place: 장소
+        start_time: 시작시간
+        end_time: 종료시간
+        content: 내용
+        event_image: 사진
+      ticket:
+        comment: 코멘트

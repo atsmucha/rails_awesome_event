@@ -1,0 +1,20 @@
+<div class="page-header"><h1>탈퇴 확인</h1></div>
+
+<% if current_user.errors.any? %>
+	<div class="alert alert-danger">
+		<ul>
+			<% current_user.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+
+<p>탈퇴한 경우, user에 관한 데이터를 전부 삭제됩니다</p>
+<p>하지만 이하의 경우에는 탈퇴가 되지 않으니 주의하여 주십시오.</p>
+<ul>
+	<li>1) 종료되지 않은 이벤트가 있는 경우</li>
+	<li>2) 종료되지 참가중인 이벤트가 있는경우</li>
+</ul>
+<hr>
+<%= link_to '탈퇴', user_path, method: :delete, class: 'btn btn-danger'%>

@@ -1,0 +1,11 @@
+ko:
+  errors:
+    messages:
+      carrierwave_processing_error: <EXCEPTION::carrierwave> 처리할수 없습니다
+      carrierwave_integrity_error: <EXCEPTION::carrierwave> 는 업로드 할 수 없는 type입니다
+      carrierwave_download_error: <EXCEPTION::carrierwave> 는 다운로드 할 수 없습니다
+      extension_white_list_error: "%{extension}파일의 업로드는 올릴수 없습니다. 업로드 가능한 이미지 타입 : %{allowed_types}"
+      extension_black_list_error: "%{extension}파일의 업로드는 올릴수 없습니다. 업로드 할수 없는 이미지 타입 : %{prohibited_types}"
+      rmagick_processing_error: <EXCEPTION::carrierwave> "rmagick이 파일을 처리를 할 수 없습니다. 사진을 확인해 주세요 error message -> %{e}"
+      mime_types_processing_error: <EXCEPTION::carrierwave> "MIME::types의 파일을 처리할 수 없습니다. Content-Type를 확인해 주세요 eeror message -> %{e}"
+      mini_magick_processing_error: <EXCEPTION::carrierwave> "를 처리 할 수 없습니다. 사진의 형식을 확인해 주세요"
